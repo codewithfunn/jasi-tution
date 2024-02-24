@@ -2,6 +2,6 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-   <p>Hello</p>
+   <p>This is protected page</p>
   );
 }
