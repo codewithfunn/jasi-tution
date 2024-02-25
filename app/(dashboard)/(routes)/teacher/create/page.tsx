@@ -35,9 +35,9 @@ const CreatePage = () => {
     const { isSubmitting, isValid } = form.formState;
     const onSubmit = async (value: z.infer<typeof formSchema>) => {
         try {
-            const response = await axios.post("/api/course", value);
+            const response = await axios.post("/api/courses", value);
             router.push(`/teacher/courses/${response.data.id}`);
-
+            toast.success("Course created successfully");
         } catch  {
                 toast.error("Something went wrong. Please try again later");
         }
