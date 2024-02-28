@@ -18,10 +18,9 @@ import { Pencil } from "lucide-react";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
+import { Chapter } from "@prisma/client";
 interface ChapterTitleFormProps {
-  initialData: {
-    title: string;
-  };
+  initialData: Chapter;
   courseId: string;
   chapterId: string;
 }
