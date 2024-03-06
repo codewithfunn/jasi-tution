@@ -3,7 +3,7 @@ import { auth } from "@clerk/nextjs";
 import { db } from "@/lib/db";
 import { redirect } from "next/navigation";
 
-import CourseSidebar from "./_components/course-sidebar";
+import {CourseSidebar} from "./_components/course-sidebar";
 import { CourseNavbar } from "./_components/course-navbar";
  
 const CourseLayout = async ({

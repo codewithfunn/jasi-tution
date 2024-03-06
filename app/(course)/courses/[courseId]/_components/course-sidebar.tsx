@@ -50,4 +50,3 @@ export const CourseSidebar = async ({
     </div>
   </div>;
 };
-export default CourseSidebar;
