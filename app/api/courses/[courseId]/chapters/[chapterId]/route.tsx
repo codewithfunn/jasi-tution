@@ -125,6 +125,7 @@ export async function PATCH(
         playback_policy: ["public"],
         test: false,
       });
+      console.log(params,asset)
       await db.muxData.create({
         data: {
           chapterId: params.chapterId,
